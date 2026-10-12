@@ -24,6 +24,9 @@
                 <a href="#" class="nav-logo"><h2 class="logo-text">Coffee</h2></a>
             </div>
             <ul class="nav-menu">
+                <button class="menu-close-button">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
                 </li>
@@ -43,8 +46,13 @@
                     <a href="#contact-us" class="nav-link">Contact Us</a>
                 </li>
             </ul>
+            <button class="menu-open-button">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
         </nav>
     </header>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
     <!----Hero Section ---->
     <section class="hero-section">
         <div class="section-content" id="home">
@@ -64,13 +72,13 @@
     </section>
     <!---About Section-------->
     <section class="about-section" id="about">
+        <h2 class="title">About Us</h2>
+        <hr>
         <div class="section-content">
             <div class="image-wrapper">
                 <img src="images/about-image.jpg" alt="">
             </div>
             <div class="about-details">
-                <h2 class="title">About Us</h2>
-                <hr>
                 <p class="description">At Coffee House in Berndorf , we pride ourselves on being a go to destination for 
                     coffee lovers and conversation seekers alike. We are dedicated to providing an exceptional coffee 
                     experience in a cozy and inviting atmosphere where guests can relax, unwind and enjoy their time in comfort.
@@ -147,7 +155,7 @@
         </div>
     </section>
     <!-----Testimonial Sections-->
-    <section class="testimonial-section">
+    <section class="testimonial-section" id="testimonial">
         <h2 class="title">Testimonials</h2>
         <div class="section-content">
             <div class="slider-container swiper">
@@ -202,7 +210,7 @@
         </div>
     </section>
     <!----Gallery Section----->
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery">
         <div class="section-content">
             <h2 class="title">Gallery</h2>
             <div class="gallery-images">
@@ -228,7 +236,7 @@
         </div>
     </section>
     <!----Contact Us----->
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
         <h2 class="title">Contact Us</h2>
         <hr>
         <div class="office-information-and-inquiry-form">
