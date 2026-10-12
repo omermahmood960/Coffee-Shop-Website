@@ -86,9 +86,6 @@ img {
     gap: 20px;
     padding: 0 10px;
 }
-.navbar .cup-logo , .navbar .nav-menu, .section-content .hero-details, .hero-image-wrapper {
-    margin: 0 auto;
-}
 /*-------- Hero Section ---------------*/
 .hero-section {
     background: var(--primary-color);
@@ -150,6 +147,7 @@ img {
 }
 .hero-section .hero-details .description {
     font-size: var(--font-size-s);
+    text-align: justify;
 }
 /* About Section  */
 .about-section {
@@ -162,9 +160,6 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-.about-section .section-content .image-wrapper {
-    margin: 0 auto;
-}
 .about-section .section-content .image-wrapper img{
     border-radius: 50%;
     width: 350px;
@@ -175,9 +170,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0 auto;
 }
-.about-section .section-content .about-details hr, .menu-section hr {
+.about-section .section-content .about-details hr, .menu-section hr, .contact-us hr {
     width: 70px;
     margin: 10px auto;
     border-top: 4px solid var(--secondary-color)
@@ -213,7 +207,6 @@ img {
 }
 .menu-list .menu-item {
     box-sizing: border-box;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -227,7 +220,7 @@ img {
 .menu-section .menu-list {
     margin-top: 80px;
     display: flex;
-    gap: 20px;
+    gap: 100px;
     flex-wrap: wrap;
 }
 .menu-section .menu-list .menu-details {
@@ -236,8 +229,139 @@ img {
     gap: 20px;
     margin-top: 30px;
 }
+/* Testimonial Section CSS */
+.testimonial-section {
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+.testimonial-section .section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.testimonial-section .title {
+    text-align: center;
+}
+.testimonial-section .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+.testimonial-section .testimonial .name {
+    margin-bottom: 15px;
+    font-size: var(--font-size-m);
+}
+.testimonial-section .testimonial .feedback {
+    line-height: 25px;
+}
+.testimonial-section .user-image {
+    margin-bottom: 50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Gallery Section  */
+.gallery-section {
+    background: var(--medium-gray-color);
+    padding: 20px;
+}
+.gallery-section .title {
+    text-align: center;
+}
+.gallery-section .gallery-images {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.gallery-section .gallery-images .gallery-item {
+    aspect-ratio: 4 / 3;
+    flex: 0 0 calc((100% - 2 * var(--gap)) / 3);
+    overflow: hidden;
+    max-width: 250px;
+    cursor: zoom-in;
+}
+.gallery-section .gallery-images .gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.gallery-section .gallery-images img:hover {
+    transform: scale(1.4);
+}
+/* Contact US Information   */
+.contact-us {
+    padding: 20px;
+    background: var(--light-pink-color);
+}
+.contact-us .title {
+    text-align: center;
+}
+.contact-us .office-information-and-inquiry-form {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.contact-us .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+.contact-us .contact-form .query textarea {
+    resize: none;
+    height: 80px;
+}
+.contact-us .contact-form input, textarea {
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--medium-gray-color);
+    width: 100%;
+    padding: 5px;
+}
+.contact-us .office-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+.contact-us .office-details .location, .email, .contact-no, .working-days, .saturday-hours, .holiday {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-us .office-details .location {
+    gap: 23px;
+}
+.contact-us .office-details .email {
+    gap: 17px;
+}
+.contact-us .contact-form .submit button {
+    color: var(--white-color);
+}
+.contact-us .contact-form .submit {
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #3b141c;
+    padding: 5px;
+}
 /* Responsive Design  */
 @media (max-width: 768px) {
+    .about-section .section-content , .menu-section .menu-list, 
+    .hero-section .section-content, .about-section .section-content
+     .contact-us.office-information-and-inquiry-form {
+        justify-content: center;
+    }
     .menu-list .menu-item {
         flex: 0 0 calc((100% - 16px) / 2);
     }
@@ -246,4 +370,7 @@ img {
   .menu-list .menu-item {
     flex: 0 0 100%;
   }
+  .contact-us .contact-form {
+        width: 100%;
+    }
 }

@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <!---Link of Styling CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <!---Link of Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---Link of Swiper------>
+    <!-- Link Swiper's CSS in your <head> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Include Swiper's JS before your script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-----NavBar Section --->
@@ -138,5 +146,134 @@
             </ul>
         </div>
     </section>
+    <!-----Testimonial Sections-->
+    <section class="testimonial-section">
+        <h2 class="title">Testimonials</h2>
+        <div class="section-content">
+            <div class="slider-container swiper">
+                <ul class="testimonial-list swiper-wrapper">
+                    <li class="testimonial swiper-slide">
+                        <img src="images/user-1.jpg" alt="James Wilson" class="user-image">
+                        <h3 class="name">James Wilson</h3>
+                        <p class="feedback">
+                            <i>"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
+                        </p>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="images/user-2.jpg" alt="Michael Brown" class="user-image">
+                        <h3 class="name">Michael Brown</h3>
+                        <p class="feedback">
+                            <i>"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
+                        </p>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="images/user-3.jpg" alt="Emily Harris" class="user-image">
+                        <h3 class="name">Emily Harris</h3>
+                        <p class="feedback">
+                            <i>"Excellent quality! Fresh beans and quick delivery. Highly recommended!"</i>
+                        </p>
+                    </li>
+
+                    <li class="testimonial swiper-slide">
+                        <img src="images/user-4.jpg" alt="Anthony Thompson" class="user-image">
+                        <h3 class="name">Anthony Thompson</h3>
+                        <p class="feedback">
+                            <i>"Best decaf I've tried! Smooth and flavorful. Arrived promptly!"</i>
+                        </p>
+                    </li>
+
+                    <li class="testimonial swiper-slide">
+                        <img src="images/user-5.jpg" alt="Sarah Johnson" class="user-image">
+                        <h3 class="name">Sarah Johnson</h3>
+                        <p class="feedback">
+                            <i>"Loved the French roast. Perfectly balanced and rich. Will order again!"</i>
+                        </p>
+                    </li>
+                </ul>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </section>
+    <!----Gallery Section----->
+    <section class="gallery-section">
+        <div class="section-content">
+            <h2 class="title">Gallery</h2>
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----Contact Us----->
+    <section class="contact-us">
+        <h2 class="title">Contact Us</h2>
+        <hr>
+        <div class="office-information-and-inquiry-form">
+            <div class="office-details">
+                <div class="location">
+                    <i class="fa fa-map-marker"></i> 
+                    <p>123 Campsite Avenue, Wilderness CA 98765</p>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <p>info@coffeeshopwebsite.com</p>
+                </div>
+                <div class="contact-no">
+                    <i class="fa fa-phone"></i>
+                    <p>1235689938</p>
+                </div>
+                <div class="working-days">
+                    <i class="fa fa-clock-o"></i>
+                    <p>Monday - Friday 9:00 AM to 5:00 PM</p>
+                </div>
+                <div class="saturday-hours">
+                    <i class="fa fa-clock-o"></i>
+                    <p>Saturday - 10:00 AM to 3:00 PM</p>
+                </div>
+                <div class="holiday">
+                    <i class="fa fa-clock-o"></i>
+                    <p>Sunday Closed</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="name">
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="email">
+                    <input type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="query">
+                    <textarea name="" placeholder="Your Question to ask"></textarea>
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
