@@ -11,7 +11,8 @@ About Us Section
 Menu Section which shows our products like hot coffee, cold coffee
 Contact Us Section
 
-**** Technologies Stack
+**TECHNOLOGIES USED**
+
 HTML5
 CSS3
 Javascript
