@@ -212,6 +212,9 @@ img {
 .menu-section {
     margin-bottom: 20px;
 }
+.menu-section .section-content {
+    padding: 0 10px;
+}
 .menu-section .title, .description {
     text-align: center;
 }
@@ -416,6 +419,9 @@ img {
     }
 }
 @media (max-width: 480px) {
+    .hero-section .section-content .hero-details {
+        margin-top: auto;
+    }
     .navbar .menu-toggle {
         display: block;
     }
